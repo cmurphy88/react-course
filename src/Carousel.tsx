@@ -17,13 +17,12 @@ class Carousel extends Component<IProps> {
     if (!(e.target instanceof HTMLElement)) {
       return;
     }
-    
+
     if (e.target.dataset.index) {
       this.setState({
         active: +e.target.dataset.index
-      })
+      });
     }
-  
   };
 
   render() {
